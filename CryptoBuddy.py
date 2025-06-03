@@ -69,6 +69,11 @@ while True:
         else:
             print("CryptoBuddy: 📉 No highly profitable options at the moment — keep an eye on the market!")
 
+    elif "list" in user_query or "show all" in user_query:
+        print("CryptoBuddy: 🪙 Here are the cryptos I know about:")
+        for name in crypto_db:
+            print(f" - {name}")
+
     else:
         print("CryptoBuddy: 🤖 Sorry, I didn’t get that. You can ask about 'sustainable', 'trending', 'long-term growth', or 'profitable' cryptos!")
 
